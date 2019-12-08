@@ -64,7 +64,7 @@ body,html{
 /*-- //header --*/
 /*-- banner --*/
 .banner{
-	background: url(../images/1.jpg) no-repeat 0px -165px;
+	background: url(../images/Banner.png) no-repeat 0px -220px;
 	background-size: cover;
 	min-height: 700px;
 	width: 100%;
@@ -506,7 +506,7 @@ p.para{
 	padding:0em 0 6em;
 	background:#F9F9F9;
 	}
-.blog h3{
+.blog h4{
 	color:#292C34;
 	margin:0 0 4em;
 	font-size:25px;
@@ -958,7 +958,7 @@ p.para{
 	.blog-mid {
 		margin-left: 6em;
 		}
-	.blog h3 {
+	.blog h4 {
 		margin: 0 0 2em;
 		}
 }
@@ -1748,4 +1748,25 @@ p.para{
 		font-size: 22px;
 		}
 }
+/*页脚微信效果开始*/
+a#weixin {
+    position: relative;
+}
+#weixin img, #weixin p {
+    visibility: hidden;
+    opacity: 0;
+    transform: translate(0, 10px);
+    transition: all 0.3s ease-in-out;
+    position: absolute;
+    right: -35px;
+    bottom: 40px;
+    width: 150px;
+    height: 150px;
+}
+#weixin:hover img, #weixin:hover p {
+    visibility: visible;
+    transform: translate(0, 200px);
+    opacity: 1;
+}
+/*页脚微信效果结束
 /*-- //responsive-media --*/
