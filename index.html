@@ -1,643 +1,357 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
 <head>
-<!-- META -->
-<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-
-<!-- TITLE -->
-<title>泰斯特软件测试基地</title>
-
-<!-- Main StyleSheet -->
-<link href="style.css" rel="stylesheet" type="text/css" />
-<link href="style-responsive.css" rel="stylesheet" type="text/css" media="screen" />
-<link href="css/font-awesome.css" rel="stylesheet" type="text/css" />
-<!--<link rel="stylesheet" href="css/bootstrap.min.css">-->
-<link rel="stylesheet" href="css/libs/animate.css">
-
-
-<!-- bxSlider CSS file -->
-<link href="css/jquery.bxslider.css" rel="stylesheet" />
-
-
-<!-- LayerSlider stylesheet -->
-<link rel="stylesheet" href="layerslider/css/layerslider.css" type="text/css">
-<!-- External libraries: jQuery & GreenSock -->
-<script src="layerslider/js/jquery.js" type="text/javascript"></script>
-<script src="layerslider/js/greensock.js" type="text/javascript"></script>
-<!-- LayerSlider script files -->
-<script src="layerslider/js/layerslider.transitions.js" type="text/javascript"></script>
-<script src="layerslider/js/layerslider.kreaturamedia.jquery.js" type="text/javascript"></script>
-
-<script src="js/bootstrap.min.js" type="text/javascript"></script>
-
-
-<!-- bxSlider Javascript file -->
-<script src="js/jquery.bxslider.js"></script>
-<script>
-$(document).ready(function(){
-$('.bxslider').bxSlider({
-						
-						pager: false,
-						controls: true,
-						auto: true
-						
-						
-						});
-});
-</script>
-
-
-
-<link rel="stylesheet" type="text/css" href="lightbox/jquery.fancybox.css" media="screen" />
-<script src="lightbox/jquery.fancybox.js"></script>
-<script type="text/javascript">
-		$(document).ready(function() {
-								   
-			$('.fancybox').fancybox();
-
-		});
-</script>
-
-
-<!-- GOTO TOP JQUERY -->
-<script type="text/javascript">
-$(function() {
-	$(window).scroll(function() {
-		if($(this).scrollTop() != 0) {
-			$('#gotop').fadeIn();	
-		} else {
-			$('#gotop').fadeOut();
-		}
-	});
- 
-	$('#gotop').click(function() {
-		$('body,html').animate({scrollTop:0},800);
-	});	
-});
-</script>
-	
-
-
-<!-- HEADER JQUERY -->
-<script type="text/javascript">
-$(function() {
-	$(window).scroll(function() {
-		if($(this).scrollTop() >= 200) {
-			$('.header').addClass("header_fix");	
-		} else {
-		   $('.header').removeClass("header_fix");
-		}
-	});	
-});
-</script>
-
-
-<script type="text/javascript">
-
-if($(window).width() <= 900){
-$(document).ready(function() {
-							
-							
-							
-			$('.mobile .title').click(function() {
-										
-										$(this).next("ul").slideToggle();
-										$(this).toggleClass("minus");
-										
-										});
-			
-			
-
-		});
-
-}
-</script>
-					
+		<title>Home</title>
+		<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+		<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+		<link href='http://fonts.useso.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.useso.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700italic,700,900,900italic' rel='stylesheet' type='text/css'>
+		<!-- js -->
+		<script src="http://apps.bdimg.com/libs/jquery/1.7.1/jquery.min.js"></script>
+		<!-- //js -->
+		<!-- for-mobile-apps -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="Galaxy Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+		Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+				function hideURLbar(){ window.scrollTo(0,1); } </script>
+		<!-- //for-mobile-apps -->
+		<!-- start-smoth-scrolling -->
+		<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+<!-- start-smoth-scrolling -->
 </head>
-
+	
 <body>
-
-
-
-<div class="header">
-<div class="container">
-
-			<a href="#" class="logo"><img src="images/logo.png" alt="" /></a>
-			
-			<div class="nav mobile">
-			<div class="title">Menu <span class="fa "></span></div>
-			<ul>
-				<li>软件测试基础</li>
-				<li>软件测试进阶</li>
-				<li>人人都是测试开发</li>
-				<li>泰斯特平台介绍</li>
-				<li>公众号</li>
-			<li><a href="#faqs_part">FAQs</a></li>
-			<li><a href="#features">FEATURES</a></li>
-			<li><a href="#testimonials_part">Testimonials </a></li>
-			<li><a href="#pricing_part">Pricing</a></li>
-			<li><a href="#contact_part">Contact</a></li>
-			<li><a href="#subscribe_part">Sign Up</a></li>
-			</ul>
+<!-- header -->
+	<div class="header">
+	<div class="container">
+		<div class="header-part">
+			<div class="head-logo">
+				<a href="index.html"><img src="images/logo.png" alt=" "></a>
 			</div>
-
-</div>
-</div>
-
-
-
-
-<div class="wrapper">
-<div class="slider_main">
-<div id="full-slider-wrapper">
-<div id="layerslider" style="width:100%;height:473px;">
-
-
-						<div class="ls-slide" data-ls="transition2d:1;timeshift:-1000;">
-						<img src="images/slider/slide-bg.jpg" class="ls-bg" alt="Slide background"/>
-						
-						
-						<div class="ls-l videopreview" style="top:87px;left:0px;white-space: nowrap;" data-ls="offsetxin:-200;durationin:2000;offsetxout:-200;">
-							<video src="introduce.mp4"></video>
-						</div>
-						
-						
-						<div class="ls-l" style="top:140px;left:638px;white-space: nowrap;" data-ls="offsetxin:0;delayin:1000;easingin:easeInOutQuart;scalexin:0.7;scaleyin:0.7;offsetxout:-800;durationout:1000;">
-						<h2 class="l1">Landing Page</h2>
-						</div>
-						
-						<div class="ls-l" style="top:200px;left:583px;white-space: nowrap;" data-ls="offsetxin:0;delayin:1000;easingin:easeInOutQuart;scalexin:0.7;scaleyin:0.7;offsetxout:-800;durationout:1000;">
-						<h2 class="l2">Powerfull & Effective theme for your business</h2>
-						</div>
-						
-					
-						
-						<div class="ls-l" style="top:265px;left:598px;" data-ls="offsetxin:0;delayin:1000;easingin:easeInOutQuart;scalexin:0.7;scaleyin:0.7;offsetxout:-800;durationout:1000;">
-						<a href="#" class="button2">Learn More</a>
-						</div>
-						
-						
-						<div class="ls-l" style="top:265px;left:810px;" data-ls="offsetxin:0;delayin:1000;easingin:easeInOutQuart;scalexin:0.7;scaleyin:0.7;offsetxout:-800;durationout:1000;">
-						<a href="#" class="button1">Start Now</a>
-						</div>
-						
-					   
-						</div><!--FIRST SLIDE-->
-						
-						
-						
-						<div class="ls-slide" data-ls="transition2d:1;timeshift:-1000;">
-						<img src="images/slider/slide-bg.jpg" class="ls-bg" alt="Slide background"/>
-						
-						
-						<div class="ls-l videopreview" style="top:87px;left:0px;white-space: nowrap;" data-ls="offsetxin:-200;durationin:2000;offsetxout:-200;">
-						<!--<iframe src="http://player.vimeo.com/video/34134308?portrait=0&amp;color=ff9933&autoplay=1" width="443" height="290" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>-->
-						<img src="images/player.png" alt="" />
-						</div>
-						
-						
-						<div class="ls-l" style="top:140px;left:638px;white-space: nowrap;" data-ls="offsetxin:0;delayin:1000;easingin:easeInOutQuart;scalexin:0.7;scaleyin:0.7;offsetxout:-800;durationout:1000;">
-						<h2 class="l1">Landing Page</h2>
-						</div>
-						
-						<div class="ls-l" style="top:200px;left:583px;white-space: nowrap;" data-ls="offsetxin:0;delayin:1000;easingin:easeInOutQuart;scalexin:0.7;scaleyin:0.7;offsetxout:-800;durationout:1000;">
-						<h2 class="l2">Powerfull & Effective theme for your business</h2>
-						</div>
-						
-					
-						
-						<div class="ls-l" style="top:265px;left:598px;" data-ls="offsetxin:0;delayin:1000;easingin:easeInOutQuart;scalexin:0.7;scaleyin:0.7;offsetxout:-800;durationout:1000;">
-						<a href="#" class="button2">Learn More</a>
-						</div>
-						
-						
-						<div class="ls-l" style="top:265px;left:810px;" data-ls="offsetxin:0;delayin:1000;easingin:easeInOutQuart;scalexin:0.7;scaleyin:0.7;offsetxout:-800;durationout:1000;">
-						<a href="#" class="button1">Start Now</a>
-						</div>
-						
-					   
-						</div><!--FIRST SLIDE-->
-						
-			 
-   
-	
-</div>
-</div> 
-</div>
-
-<!--<div class="service_section">-->
-<!--<div class="container">-->
-
-			<!--<h2>Take a look to see our services</h2>-->
-			<!--<h4>One machine can do the work of fifty ordinary men. No machine can do the work of one extraordinary man</h4>-->
-			<!---->
-			<!--<div class="insider">-->
-		   <!---->
-				<!--<div class="column">-->
-				<!--<span class="fa fa-mobile"></span>-->
-				<!--<h3>Responsive layout</h3>-->
-				<!--<p>From there to here, and here to there, funny things are everywhere.</p>-->
-				<!--</div>-->
-				<!---->
-				<!--<div class="column">-->
-				<!--<span class="fa fa-comment-o"></span>-->
-				<!--<h3>Customer support</h3>-->
-				<!--<p>From there to here, and here to there, funny things are everywhere.</p>-->
-				<!--</div>-->
-				<!---->
-				<!--<div class="column">-->
-				<!--<span class="fa fa-heart-o"></span>-->
-				<!--<h3>Lovely design</h3>-->
-				<!--<p>From there to here, and here to there, funny things are everywhere.</p>-->
-				<!--</div>-->
-		   <!---->
-			<!--</div>-->
-
-<!--</div>-->
-<!--</div>-->
-
-
-
-
-
-<!--<div class="feature_section" id="features">-->
-<!--<div class="container">-->
-
-				<!---->
-				<!--<div class="leftside">-->
-				<!--<img src="images/thumbs/t1.png" alt=""  class="wow bounceInLeft animated" data-wow-duration="2s" data-wow-offset="300" data-wow-delay="0.2s" />-->
-				<!--</div>-->
-				<!---->
-				<!---->
-				<!--<div class="rightside">-->
-				<!--<h2>Explore the awesomeness</h2>-->
-				<!--<p>-->
-				<!--Designing is a matter of concentration. You go deep into what you want to do. It's about intensive research, really. The concentration is warm and intimate and like the fire inside the earth - intense but not distorted. You can go to a place, really feel it in your heart. It's actually a beautiful feeling.-->
-				<!--</p>-->
-				<!---->
-				<!--<div class="feature">-->
-				<!--<span class="fa fa-life-ring"></span>-->
-				<!--<div class="description">-->
-				<!--<strong>Good in Performance</strong> <br />-->
-				<!--Designing is a matter of concentration. You go deep into what you want to do. It's about intensive research, really.-->
-				<!--</div>-->
-				<!--</div>-->
-				<!---->
-				<!--<br clear="all" />-->
-				<!---->
-				<!--<a href="#" class="button3">Learn More</a>-->
-				<!--<a href="#" class="button4">Start Now</a>-->
-				<!--</div>			-->
-
-<!--</div>-->
-<!--</div>-->
-
-
-
-
-
-<!--<div class="feature_section ano_feature_section">-->
-<!--<div class="container">-->
-
-				<!---->
-				<!--<div class="leftside">-->
-				<!--<h2>Describe more about product</h2>-->
-				<!--<p>-->
-				<!--Designing is a matter of concentration. You go deep into what you want to do. It's about intensive research, really. The concentration is warm and intimate and like the fire inside the earth - intense but not distorted. You can go to a place, really feel it in your heart. It's actually a beautiful feeling.-->
-				<!--</p>-->
-				<!---->
-				<!--<div class="feature">-->
-				<!--<span class="fa fa-life-ring"></span>-->
-				<!--<div class="description">-->
-				<!--<strong>Good in Performance</strong> <br />-->
-				<!--Designing is a matter of concentration. You go deep into what you want to do. It's about intensive research, really.-->
-				<!--</div>-->
-				<!--</div>-->
-				<!---->
-				<!--<div class="feature">-->
-				<!--<span class="fa fa-play-circle-o "></span>-->
-				<!--<div class="description">-->
-				<!--<strong>Video Background</strong> <br />-->
-				<!--Designing is a matter of concentration. You go deep into what you want to do. It's about intensive research, really.-->
-				<!--</div>-->
-				<!--</div>-->
-				<!---->
-				<!--</div>-->
-				<!---->
-				<!---->
-				<!--<div class="rightside">-->
-				<!--<img src="images/thumbs/t2.png" alt="" class="wow bounceInRight animated imagethumb2" data-wow-offset="300" data-wow-delay="0.2s" />-->
-				<!--</div>			-->
-
-<!--</div>-->
-<!--</div>-->
-
-
-
-
-<!--<div class="common_section" id="faqs_part">-->
-<!--<div class="container">-->
-
-			<!--<h2>Frequently Asked Questions</h2>-->
-			<!--<h4>One machine can do the work of fifty ordinary men. No machine can do the work of one extraordinary man</h4>-->
-			<!---->
-			<!---->
-			<!--<div class="faqbox">-->
-			<!--<div class="title">Are bears just about to extinct?</div>-->
-			<!--<p>-->
-			<!--Yes! But if you’d like to buy us a slice of cheap pizza, we’ll reward you with some cool bonus features.-->
-			<!--</p>-->
-			<!--</div>-->
-			<!---->
-			<!--<div class="faqbox longer">-->
-			<!--<div class="title">Will Star Wars Episode VII be awesome?</div>-->
-			<!--<p>-->
-			<!--Absolutely not! This theme takes privacy and security extremely seriously. Your personal information will not be shared with anyone. All interaction with this website is encrypted over HTTPS, using the same encryption technology used by banks.-->
-			<!--</p>-->
-			<!--</div>-->
-			<!---->
-			<!---->
-			<!--<div class="faqbox">-->
-			<!--<div class="title">Are bears just about to extinct?</div>-->
-			<!--<p>-->
-			<!--Yes! But if you’d like to buy us a slice of cheap pizza, we’ll reward you with some cool bonus features.-->
-			<!--</p>-->
-			<!--</div>-->
-			<!---->
-			<!---->
-			<!--<div class="faqbox">-->
-			<!--<div class="title">Are bears just about to extinct?</div>-->
-			<!--<p>-->
-			<!--Yes! But if you’d like to buy us a slice of cheap pizza, we’ll reward you with some cool bonus features.-->
-			<!--</p>-->
-			<!--</div>-->
-			<!---->
-			<!---->
-			<!--<div class="faqbox">-->
-			<!--<div class="title">Are bears just about to extinct?</div>-->
-			<!--<p>-->
-			<!--Yes! But if you’d like to buy us a slice of cheap pizza, we’ll reward you with some cool bonus features.-->
-			<!--</p>-->
-			<!--</div>-->
-			<!---->
-			<!---->
-
-<!--</div>-->
-<!--</div>-->
-
-
-
-
-<!--<div class="common_section" id="testimonials_part">-->
-<!--<div class="container">-->
-
-			<!--<h2>Trusted worldwide</h2>-->
-			<!--<h4 style="margin:0 0 40px 0;">One machine can do the work of fifty ordinary men. No machine can do the work of one extraordinary man</h4>-->
-			<!---->
-		   <!---->
-			<!--<br clear="all" />-->
-			<!---->
-			<!--<ul class="bxslider">-->
-			<!---->
-			<!--<li>-->
-			<!--<div class="testimonial_box">-->
-			<!--<div class="quote_button"><img src="images/icons/i7.png" alt="" /></div>-->
-			<!--<div class="para">-->
-			<!--Never expected to get such a powerful-functionality theme for this little money! It is a real pleasure to work with, I think it simply guesses my thoughts! All the customization is playfully easy, reminds more of a game rather than website setup.-->
-			<!--</div>-->
-			<!--<div class="clientinfo">-->
-			<!--<img src="images/clients/c1.png" alt="" />-->
-			<!--Karen Walker-->
-			<!--</div>-->
-			<!--</div>-->
-			<!--</li>-->
-			<!---->
-			<!--</ul>-->
-			<!---->
-
-<!--</div>-->
-<!--</div>-->
-
-
-
-
-
-<!--<div class="pricing_table_section" id="pricing_part">-->
-<!--<div class="container">-->
-
-			<!--<h2>Price Table</h2>-->
-			<!--<h4>term sheet convertible note colluding bootstrapping</h4>-->
-			<!---->
-		   <!---->
-			<!--<div class="insider">-->
-			<!---->
-			<!---->
-			<!--<div class="block">-->
-			<!--<div class="head">-->
-			<!--<h2>Basic</h2>-->
-			<!--<p>From <strong>$59</strong> per month</p>-->
-			<!--</div>-->
-			<!--<ul>-->
-			<!--<li>Total Users <span>10</span></li>-->
-			<!--<li>Unlimited Styles <span><img src="images/icons/i8.png" alt="" /></span></li>-->
-			<!--<li>Advance Protection <span><img src="images/icons/i8.png" alt="" /></span></li>-->
-			<!--<li>Cloud Storage <span><img src="images/icons/i8.png" alt="" /></span></li>-->
-			<!--<li>24/7 Customer Service <span><img src="images/icons/i8.png" alt="" /></span></li>-->
-			<!--<li>Backup Service <span><img src="images/icons/i9.png" alt="" /></span></li>-->
-			<!--<li><h5>$59 Per Month</h5> <a href="#" class="button5">SIGN UP</a></li>-->
-			<!--</ul>-->
-			<!--</div>-->
-			<!---->
-			<!---->
-			<!--<div class="block">-->
-			<!--<div class="head">-->
-			<!--<h2>Premium</h2>-->
-			<!--<p>From <strong>$59</strong> per month</p>-->
-			<!--</div>-->
-			<!--<ul>-->
-			<!--<li>Total Users <span>10</span></li>-->
-			<!--<li>Unlimited Styles <span><img src="images/icons/i8.png" alt="" /></span></li>-->
-			<!--<li>Advance Protection <span><img src="images/icons/i8.png" alt="" /></span></li>-->
-			<!--<li>Cloud Storage <span><img src="images/icons/i8.png" alt="" /></span></li>-->
-			<!--<li>24/7 Customer Service <span><img src="images/icons/i8.png" alt="" /></span></li>-->
-			<!--<li>Backup Service <span><img src="images/icons/i9.png" alt="" /></span></li>-->
-			<!--<li><h5>$59 Per Month</h5> <a href="#" class="button5 button6">SIGN UP</a></li>-->
-			<!--</ul>-->
-			<!--</div>-->
-			<!---->
-			<!---->
-			<!---->
-			<!--<div class="block">-->
-			<!--<div class="head">-->
-			<!--<h2>Ultimate</h2>-->
-			<!--<p>From <strong>$59</strong> per month</p>-->
-			<!--</div>-->
-			<!--<ul>-->
-			<!--<li>Total Users <span>10</span></li>-->
-			<!--<li>Unlimited Styles <span><img src="images/icons/i8.png" alt="" /></span></li>-->
-			<!--<li>Advance Protection <span><img src="images/icons/i8.png" alt="" /></span></li>-->
-			<!--<li>Cloud Storage <span><img src="images/icons/i8.png" alt="" /></span></li>-->
-			<!--<li>24/7 Customer Service <span><img src="images/icons/i8.png" alt="" /></span></li>-->
-			<!--<li>Backup Service <span><img src="images/icons/i9.png" alt="" /></span></li>-->
-			<!--<li><h5>$59 Per Month</h5> <a href="#" class="button5">SIGN UP</a></li>-->
-			<!--</ul>-->
-			<!--</div>-->
-			<!---->
-			<!---->
-			<!--</div>-->
-			<!---->
-
-<!--</div>-->
-<!--</div>-->
-
-
-
-
-<!--<div class="common_section" id="contact_part">-->
-<!--<div class="container">-->
-
-			<!--<h2>Get in touch with us</h2>-->
-			<!--<h4>term sheet convertible note colluding bootstrapping</h4>-->
-			<!---->
-		   <!---->
-			<!--<br clear="all" />-->
-			<!---->
-			<!---->
-			<!--<form method="post" class="hpform">-->
-			<!--<input type="text" placeholder="Name" />-->
-			<!--<input type="email" placeholder="Email" />-->
-			<!--<textarea placeholder="Message"></textarea>-->
-			<!--<input type="submit" value="SEND" />-->
-			<!--</form>-->
-			<!---->
-		   <!---->
-			<!---->
-
-<!--</div>-->
-<!--</div>-->
-
-
-
-
-<!--<div class="subscribe_section" id="subscribe_part">-->
-<!--<div class="container">-->
-
-			<!--<h2>Subscribe to our newsletter</h2>-->
-			<!---->
-		   <!---->
-			<!--<br clear="all" />-->
-			<!---->
-			<!---->
-			<!--<form method="post">-->
-			<!--<input type="email" placeholder="Enter your e-Mail" />-->
-			<!--<input type="submit" value="SUBSCRIBE" />-->
-			<!--</form>-->
-			<!---->
-		   <!---->
-			<!---->
-
-<!--</div>-->
-<!--</div>-->
-
-
-
-
-<div class="common_section">
-<div class="container">
-
-	
-			<a href="#" class="footer_logo"><img src="images/logo.png" alt="" /></a>
-		   
-			<div class="copyright">Copyright &copy; 2017.Company name All rights reserved.</div>                    
-
-</div>
-</div>
-
-
-</div><!--wrapper-->
-
-
-<script>
-	jQuery("#layerslider").layerSlider({
-		responsive: false,
-		responsiveUnder: 1100,
-		layersContainer: 1100,
-		skin: 'fullwidth',
-		hoverPrevNext: false,
-		skinsPath: 'layerslider/skins/'
-	});
-
-
-</script>
-
-<script src="js/wow.js"></script>
-<script>
-wow = new WOW(
-  {
-	animateClass: 'animated',
-	offset:       100
-  }
-);
-wow.init();
-document.getElementById('moar').onclick = function() {
-  var section = document.createElement('section');
-  section.className = 'section--purple wow fadeInDown';
-  this.parentNode.insertBefore(section, this);
-};
-</script>
-
-<script type="text/javascript">
-$(function() {
-$('a[href*=#]:not([href=#])').click(function() {
-if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-var target = $(this.hash);
-target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-if (target.length) {
-$('html,body').animate({
-scrollTop: target.offset().top - 132
-}, 2000);
-return false;
-}
-}
-});
-});
-</script>
-
-
-<script type="text/javascript">
-
-
-$(document).ready(function() {
-
-if($(window).width() <= 1200){
-
-
-$(function() {
-$('a[href*=#]:not([href=#])').click(function() {
-if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-var target = $(this.hash);
-target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-if (target.length) {
-$('html,body').animate({
-scrollTop: target.offset().top - 132
-}, 2000);
-return false;
-}
-}
-});
-});
-
-
-
-}
-
-});
-
-
-</script> 
-	 
-
-
+			<div class="top-nav">
+				<span class="menu"><img src="images/menu.png" alt="" /></span>
+					<ul class="nav1">
+						<li><a href="#home" class="scroll">Home</a></li>
+						<li><a href="#about" class="scroll">About</a></li>
+						<li><a href="#team" class="scroll">Team</a></li>
+						<li><a href="#price" class="scroll">Pricing</a></li>
+						<li><a href="#blog" class="scroll">Blog</a></li>
+					</ul>
+					<script> 
+							   $( "span.menu" ).click(function() {
+								 $( "ul.nav1" ).slideToggle( 300, function() {
+								 // Animation complete.
+								  });
+								 });
+							
+					</script>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+	</div>
+<!-- //header -->
+<!-- banner -->
+	<div class="banner">
+	<div class="container">
+		<div class="banner-info">
+			<h2>NEW BRANDING STYLE</h2>
+			<p>see our new graphic design collection</p>
+			<div class="more">
+				<a href="#">Learn More</a>
+			</div>
+		</div>
+	</div>
+	</div>
+<!-- //banner -->
+<!-- banner-bottom -->
+	<div class="banner-bottom">
+	<div class="container">
+		<div class="banner-bottom-left">
+			<div class="fig">
+				
+			</div>
+			<h3>Web Design</h3>
+			<p>Lorem ipsum dolor sit amet<span> est oben dis</span></p>
+		</div>
+		<div class="banner-bottom-left banner-bottom-mid">
+			<div class="fig1">
+				
+			</div>
+			<h3>Graphic Design</h3>
+			<p>Lorem ipsum dolor sit amet<span> est oben dis</span></p>
+		</div>
+		<div class="banner-bottom-left">
+			<div class="fig2">
+				
+			</div>
+			<h3>Photography</h3>
+			<p>Lorem ipsum dolor sit amet<span> est oben dis</span></p>
+		</div>
+		<div class="clearfix"> </div>
+		<div class="banner-bottom-text">
+			<p>"I Want to make beautiful things,even if nobody cares,
+				<span>as opposed to ugly things.That's my intent."</span></p>
+		</div>
+		<div class="banner-bottom-grids">
+			<div class="banner-bottom-grid">
+				<img src="images/8.jpg" alt=" " />
+				<h3>Cool image</h3>
+				<p>Galaxy Corp.</p>
+			</div>
+			<div class="banner-bottom-grid grid-mid">
+				<img src="images/3.jpg" alt=" " />
+				<h3>Great Picture</h3>
+				<p>Galaxy Corp.</p>
+			</div>
+			<div class="banner-bottom-grid">
+				<img src="images/2.jpg" alt=" " />
+				<h3>Cool image</h3>
+				<p>Galaxy Corp.</p>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+	</div>
+<!-- //banner-bottom -->
+<!-- about -->
+	<div id="about" class="team">
+	<div class="container">
+		<h4>About us</h4>
+		<div class="group">
+			<img src="images/h.jpg" alt=" " />
+		</div>
+		<div class="group-text">
+			<h3> Praesent vestibulum molestie lacus</h3>
+			<p>Molestie sollicitudin molestie malesuada. Curabitur aliquet quam id dui posuere dit. 
+					Donec sollicitudin molestie malesuada. Lorem ipsum dolor sit amet, consecteturs.
+					Aliquam dapibus tincidunt metus. Praesent justo dolor, lobortis quis,
+					lobortis dignissim, pulvinar ac, lorem. Lorem ipsum dolor sit amet,
+					consectetuer adipiscing elit. Praesent vestibulum molestie lacus. 
+					Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi.
+					Cum sociis natoque penatibus et magnis dis parturient montes, 
+					nascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada odio. Morbi…</p>
+		</div>
+		<div class="clearfix"> </div>
+	</div>
+	</div>
+	<div id="team" class="about">
+	<div class="container">
+		<div class="about-us">
+			<h2>Team</h2>
+			<p>Donec sollicitudin molestie malesuada. Nulla quis lorem ut libero mal suada 
+				<span>feugiat. Curabitur aliquet quamuis lorem</span></p>
+		</div>
+		<div class="about-grids">
+			<div class="about-grid">
+				<img src="images/12.jpg" alt=" " />
+				<div class="about-grid-john">
+					<div class="john">
+						<h4>Mr.John Doe</h4>
+						<p>Creative Director</p>
+					</div>
+					<div class="social-icons">
+						<ul>
+							<li><a href class="facebook"> </a></li>
+							<li><a href class="twitter"> </a></li>
+						</ul>
+					</div>
+					<div class="clearfix"> </div>
+					<p class="para">Donec sollicitudin molestie male
+							suada. Curabitur aliquet quam id dui 
+							posuere blandit. Donec sollicitudin 
+							molestie malesuada.</p>
+					<div class="hello">
+						<a href="#">Say Hello</a>
+					</div>
+				</div>
+			</div>
+			<div class="about-grid about-mid">
+				<img src="images/13.jpg" alt=" " />
+				<div class="about-grid-john">
+					<div class="john">
+						<h4>Mr.John Doe</h4>
+						<p>Creative Director</p>
+					</div>
+					<div class="social-icons">
+						<ul>
+							<li><a href class="facebook"> </a></li>
+							<li><a href class="twitter"> </a></li>
+						</ul>
+					</div>
+					<div class="clearfix"> </div>
+					<p class="para">Donec sollicitudin molestie male
+							suada. Curabitur aliquet quam id dui 
+							posuere blandit. Donec sollicitudin 
+							molestie malesuada.</p>
+					<div class="hello">
+						<a href="#">Say Hello</a>
+					</div>
+				</div>
+			</div>
+			<div class="about-grid">
+				<img src="images/11.jpg" alt=" " />
+				<div class="about-grid-john">
+					<div class="john">
+						<h4>Mr.John Doe</h4>
+						<p>Creative Director</p>
+					</div>
+					<div class="social-icons">
+						<ul>
+							<li><a href class="facebook"> </a></li>
+							<li><a href class="twitter"> </a></li>
+						</ul>
+					</div>
+					<div class="clearfix"> </div>
+					<p class="para">Donec sollicitudin molestie male
+							suada. Curabitur aliquet quam id dui 
+							posuere blandit. Donec sollicitudin 
+							molestie malesuada.</p>
+					<div class="hello">
+						<a href="#">Say Hello</a>
+					</div>
+				</div>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+	</div>
+<!-- //about -->
+<!-- pricing -->
+	<div id="price" class="pricing">
+	<div class="container">
+		<div class="price">
+			<h2>Pricing</h2>
+			<p>Donec sollicitudin molestie malesuada. Nulla quis lorem ut libero mal suada 
+				<span>feugiat. Curabitur aliquet quam uis lorem</span></p>
+		</div>
+		<div class="basic">
+			<div class="business">
+				<h2>Basic</h2>
+				<p>Best for small business</p>
+			</div>
+			<div class="value">
+				<p>19,99$</p>
+			</div>
+			<ul>
+				<li><span>50</span> Projects</li>
+				<li><span>20</span> Files</li>
+				<li><span>Full</span> Support</li>
+				<li class="gd"><span>24h</span> Ready</li>
+			</ul>
+			<div class="buy-me">
+				<a href="#">Buy Me</a>
+			</div>
+		</div>
+		<div class="basic basic-mid">
+			<div class="business">
+				<h2>Premium</h2>
+				<p>Best for medium business</p>
+			</div>
+			<div class="value">
+				<p>49,99$</p>
+			</div>
+			<ul>
+				<li><span>50</span> Projects</li>
+				<li><span>20</span> Files</li>
+				<li><span>Full</span> Support</li>
+				<li class="gd"><span>24h</span> Ready</li>
+			</ul>
+			<div class="buy-me">
+				<a href="#">Buy Me</a>
+			</div>
+		</div>
+		<div class="basic">
+			<div class="business">
+				<h2>Deluxe</h2>
+				<p>Best for big business</p>
+			</div>
+			<div class="value">
+				<p>99,99$</p>
+			</div>
+			<ul>
+				<li><span>50</span> Projects</li>
+				<li><span>20</span> Files</li>
+				<li><span>Full</span> Support</li>
+				<li class="gd"><span>24h</span> Ready</li>
+			</ul>
+			<div class="buy-me">
+				<a href="#">Buy Me</a>
+			</div>
+		</div>
+		<div class="clearfix"> </div>
+	</div>
+	</div>
+<!-- //pricing -->
+<!-- blog -->
+	<div id="blog" class="blog">
+	<div class="container">
+		<h3>FROM THE BLOG</h3>
+		<div class="blog-grids">
+			<div class="blog-grid">
+				<a href="blog.html"><img src="images/4.jpg" alt=" " /></a>
+				<h4><a href="blog.html">Web Design</a></h4>
+				<p>Sed porttitor lactus nibh.Vivamus magna justo.Lacinia eget consecteture sed,convallis att
+					tellus.Curabitur aliquet quam id dui posuere blandit.Cras ultricies ligula sed magna...</p>
+			</div>
+			<div class="blog-grid blog-mid">
+				<a href="blog.html"><img src="images/5.jpg" alt=" " /></a>
+				<h4><a href="blog.html">Web Design</a></h4>
+				<p>Sed porttitor lactus nibh.Vivamus magna justo.Lacinia eget consecteture sed,convallis att
+					tellus.Curabitur aliquet quam id dui posuere blandit.Cras ultricies ligula sed magna...</p>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+	</div>
+<!-- //blog -->
+<!-- footer -->
+	<div class="footer">
+	<div class="container">
+		<div class="footer-left">
+			<div class="footer-left-text">
+				<p>Copyright &copy; 2015.Company name All rights reserved.</p>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+		<div class="footer-right">
+			<ul>
+				<li><a href="#" class="facebook"> </a></li>
+				<li><a href="#" class="twitter"> </a></li>
+				<li><a href="#" class="dribble"> </a></li>
+			</ul>
+		</div>
+		<div class="clearfix"> </div>
+	</div>
+	</div>
+<!-- //footer -->
+<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+									$(document).ready(function() {
+										/*
+										var defaults = {
+								  			containerID: 'toTop', // fading element id
+											containerHoverID: 'toTopHover', // fading element hover id
+											scrollSpeed: 1200,
+											easingType: 'linear' 
+								 		};
+										*/
+										
+										$().UItoTop({ easingType: 'easeOutQuart' });
+										
+									});
+	</script>
+<!-- //here ends scrolling icon -->
 </body>
 </html>
