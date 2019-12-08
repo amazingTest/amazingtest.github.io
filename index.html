@@ -27,11 +27,17 @@
 					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
 				});
 			});
+			//播放
+			function playVideo(){
+				var video = document.getElementById("videoPlayer");
+				//video.currentTime = 0;
+				video.play();
+			}
 		</script>
 <!-- start-smoth-scrolling -->
 </head>
 	
-
+<body>
 <!-- header -->
 	<div class="header">
 	<div class="container">
@@ -50,7 +56,10 @@
 							</a>
 						</li>
 						<li><a href="#about" class="scroll">关于泰斯特</a></li>
-						<li><a href="#testDev" class="scroll">测试开发</a></li>
+						<li>
+							<a onclick="playVideo()" href="#testDev" class="scroll">测试开发
+							</a>
+						</li>
 						<!--<li><a href="blog.html">精品文章</a></li>-->
 					</ul>
 					<script> 
@@ -152,7 +161,7 @@
 				的门槛越来越高, 开发能力薄弱的测试人
 				员逐渐被行业所淘汰。为帮助大家跟上测试行业发展的节奏, 泰斯特结合了所有测试前辈
 				沉淀的精华以及自身对自动化测试的感悟打造了
-				<a href="#testDev" class="scroll">「人人都是测试开发」</a>这门课程，内
+				<a onclick="playVideo()" href="#testDev" class="scroll">「人人都是测试开发」</a>这门课程，内
 				容涵盖了前后双端以及数据库相关的知识，
 				快速帮助大家完成测试开发的梦想，就如同课名一般，泰斯特的愿景是人人都是测试开发。
 				希望这门课程能够帮助大家在测试领域中更上一层楼，人人都能开发出心目中的 "泰斯特平台"。
@@ -310,14 +319,19 @@
 	<!--</div>-->
 <!--&lt;!&ndash; //pricing &ndash;&gt;-->
 <div>
+
 	<div id="testDev" class="blog">
 		<div class="container">
 			<h4 style="margin-top: 30px">人人都是测试开发</h4>
-			<video src="introduce.mp4" controls = "true" style="width: 100%;clear:both;display:block;margin:auto">
-
+			<video
+					id="videoPlayer"
+					src="introduce.mp4"
+					controls = "true"
+					style="width: 100%;clear:both;display:block;margin:auto">
 			</video>
 		</div>
 	</div>
+
 </div>
 
 <!--&lt;!&ndash; blog &ndash;&gt;-->
@@ -365,19 +379,20 @@
 <!-- //footer -->
 <!-- here stars scrolling icon -->
 	<script type="text/javascript">
-									$(document).ready(function() {
-										/*
-										var defaults = {
-								  			containerID: 'toTop', // fading element id
-											containerHoverID: 'toTopHover', // fading element hover id
-											scrollSpeed: 1200,
-											easingType: 'linear' 
-								 		};
-										*/
-										
-										$().UItoTop({ easingType: 'easeOutQuart' });
-										
-									});
+	$(document).ready(function() {
+		/*
+		var defaults = {
+			containerID: 'toTop', // fading element id
+			containerHoverID: 'toTopHover', // fading element hover id
+			scrollSpeed: 1200,
+			easingType: 'linear'
+		};
+		*/
+
+		$().UItoTop({ easingType: 'easeOutQuart' });
+
+	});
+
 	</script>
 <!-- //here ends scrolling icon -->
 </body>
