@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-		<title>Home</title>
+		<title>泰斯特软件测试基地</title>
 		<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
 		<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 		<link href='http://fonts.useso.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
@@ -12,8 +12,7 @@
 		<!-- for-mobile-apps -->
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<meta name="keywords" content="Galaxy Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
-		Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+		<meta name="keywords" content="帮助 测试小白 学习 软件测试 自动化测试 测试开发 性能测试 安全测试 提升 软件测试 技术" />
 		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
 				function hideURLbar(){ window.scrollTo(0,1); } </script>
 		<!-- //for-mobile-apps -->
@@ -27,10 +26,29 @@
 					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
 				});
 			});
+			//播放
+			function playVideo(){
+				var video = document.getElementById("videoPlayer");
+				//video.currentTime = 0;
+				video.play();
+			}
+			$(document).ready(function() {
+
+                var defaults = {
+                    containerID: 'toTop', // fading element id
+                    containerHoverID: 'toTopHover', // fading element hover id
+                    scrollSpeed: 1200,
+                    easingType: 'linear'
+                };
+
+
+                $().UItoTop({ easingType: 'easeOutQuart' });
+
+            });
 		</script>
 <!-- start-smoth-scrolling -->
 </head>
-	
+
 <body>
 <!-- header -->
 	<div class="header">
@@ -41,20 +59,28 @@
 			</div>
 			<div class="top-nav">
 				<span class="menu"><img src="images/menu.png" alt="" /></span>
-					<ul class="nav1">
-						<li><a href="#home" class="scroll">Home</a></li>
-						<li><a href="#about" class="scroll">About</a></li>
-						<li><a href="#team" class="scroll">Team</a></li>
-						<li><a href="#price" class="scroll">Pricing</a></li>
-						<li><a href="#blog" class="scroll">Blog</a></li>
+					<ul class="nav1" style="margin-top:25px">
+						<li>
+							<a id="weixin" class="scroll">免费抢教程
+								<div>
+									<img src="images/wechat.png"/>
+								</div>
+							</a>
+						</li>
+						<li><a href="#about" class="scroll">关于泰斯特</a></li>
+						<li>
+							<a onclick="playVideo()" href="#testDev" class="scroll">测试开发
+							</a>
+						</li>
+						<li><a href="blog.html">精品文章</a></li>
 					</ul>
-					<script> 
+					<script>
 							   $( "span.menu" ).click(function() {
 								 $( "ul.nav1" ).slideToggle( 300, function() {
 								 // Animation complete.
 								  });
 								 });
-							
+
 					</script>
 			</div>
 			<div class="clearfix"> </div>
@@ -62,114 +88,378 @@
 	</div>
 	</div>
 <!-- //header -->
-<!-- banner-bottom -->
+<!-- banner -->
+	<!-- banner-bottom -->
 	<div class="banner-bottom1">
 	<div class="container">
-		<h2>Lacinia eget consecteture sed convallis</h2>
-		<div class="banner-bottom1-left">
-			<img src="images/b.jpg" alt=" " />
-			<p>Sed porttitor lactus nibh.Vivamus magna justo.Lacinia eget consecteture sed,convallis att
-				tellus.Curabitur aliquet quam id dui posuere blandit.Cras ultricies ligula sed magna...
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-				sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-				Ut enim ad minim veniam, quis nostrud exercitationDonec sollicitudin molestie malesuada. Nulla quis lorem ut libero mal suada 
-				feugiat. Curabitur aliquet quam uis loremUt enim ad minim cupidatat non proident, 
-				sunt in culpa qui officia deserunt mollit 
-				anim id est laborum.Donec sollicitudin molestie masuada. Curabitur aliquet quam id duiposuere blandit. Donec sollicitudin 
-				molestie malesuada. Lorem ipsum dolor sit amet, consectetur adipiscingelit. Curabitur aliquet quam id dui 
-				posuere blandit. Proin eget tortor risus.Sed porttitor lactus nibh.Vivamus magna justo.
-				Lacinia eget consecteture sed,convallis att
-				tellus.Curabitur aliquet quam id dui posuere blandit.Cras ultricies ligula sed magna</p>
-			
+		<h2>什么？70位顶尖测试工程师被 AI 击败</h2>
+		<p class="banner-bottom1-left">
+			<div>
+			<img style="width: 100%;clear:both;display:block;margin:auto"
+				 alt="AI 赋能软件测试"
+				 src="images/articleBanner.png"/>
+			</div>
+			<div>
+				<br/>
+				<ul>
+					<li><h3>原文作者: Jason Arbon, test.ai 首席执行官</h3></li>
+					<li><h3>译者: 泰斯特</h3></li>
+				</ul>
+				<br/>
+				<h1>前言</h1>
+				<br/>
+				<p>AI 已经可以在国际象棋、围棋、智力问答中击败人类，最近我发现 AI 甚至可以在测试工程师最擅长的领域 - 软件测试 中击败人类。我花了非常多的时间和精力去研究如何让机器使用神经网络、聚类、或者强化学习技术去执行测试用例，这是一项非常繁重的工作。不过从某种程度上这也是相对重复的工作。既然 AI 已经可以在城市中驾驶汽车和玩网络游戏，AI 也应该可以帮助我们执行那么一两个测试用例。</p>
+
+				<h1>正文</h1>
+				<br/>
+				<h2>测试工程师的饭碗能否保住？</h2>
+
+				<p>不断地有测试人员问我他们的饭碗是否还保得住，而我通常会给予肯定的回答。为什么呢，有如下 3 点原因。</p>
+
+				<ul><li>实际的测试用例还是需要测试人员编写，AI 只是帮助我们去执行用例。</li><li>当我被问到这些问题时，我周围通常站了 50 - 1000 个测试工程师，我怕被打死。</li><li>在很长一段时间内，部分领域的测试是无法用机器代替人类去衡量的，特别是对软件定性的质量评估。</li></ul>
+
+				<p>某些定性的质量评估：这个软件有多好用？这个软件看起来怎么样？这个承载服务的界面可以让用户有依赖感吗？就算是我们专业的测试人员，包括我，有时候也会对某些质量评估标准感到困惑，所以如果我们去专精这些领域，我们的饭碗当然是可以保住的。</p>
+				<br/>
+				<h2>来一次人机对战</h2>
+
+				<p>我曾共同举办了一场专门为测试人员开设的教学课程，教学的内容是 AI 和机器学习。当时教室里一共有 70 位学员，这些学员可不是刚刚入门测试的菜鸟，他们都是专业的测试工程师，否则他们公司也不会支付昂贵的费用派他们来我这里接受为期一周的培训。而且这些测试人员也是有相当的自信才会来这里学习 AI 和机器学习，他们都是非常棒的测试工程师。</p>
+
+				<p>我当时在课堂上问了他们一个定性的测试问题（当然现在也在问你）：</p>
+
+				<p>如果你正在查看一个登录页面，那么如何确定登录页面是否可信？ 你如何评价页面的可信度？</p>
+
+				<p>可以先头脑风暴一波......</p>
+				<br/>
+				<img style="width: 100%;clear:both;display:block;margin:auto"
+					 alt="可信, 不可信的 App"
+					 src="images/trustAppSample.png"/>
+				<br/>
+				<p>再花点时间看一看上方的例子，你有什么想法了吗？</p>
+				<br/>
+				<h2>测试专家们的挑战结果</h2>
+
+				<p>当时教室内的其他 70 个人也在思考这个问题，没有人马上举手给出答案，房间内不停地传出一阵阵思索的声音。照顾到大家从零开始思考并不是一件容易的事，我说我本来也不知道如何作答，并鼓励大家继续思考。在 70 名顶尖测试工程师集体思考了三分多钟后，我们终于有了一个好的开头。前排的一位测试媛大胆地说出了她的想法：“外语”。如果登录页面的应用属于美国应用商店但其中包含了一些非英文的单词，用户就会不太明白这个页面到底想告诉他们什么，那么该页面就不太会被用户所信任。</p>
+
+				<p>又过了一阵子，第二只手终于举了起来，这位举手的勇士表示如果登录页面上存在一些比较著名的商标或企业名称，那么这个页面可能更被用户所信任。如果用户发现登录页上存在谷歌或者微软的商标，那么比起其他的页面，这个页面将更有可能被用户所信赖。如果这个页面上的商标用户连听都没听说过，那么这个页面将不那么可信。</p>
+
+				<p>在本次头脑风暴上，我们大概消耗了 70 * 5 分钟的人类计算耗时。这差不多是测试行业最顶尖人才 6 小时的脑力。但目前为止，我们并没有得出一种有效的方法去给登录页面的信赖度打分，我们仅仅讨论出可能会对信赖度产生影响的 2 个关键点。</p>
+				<br/>
+				<h2>AI 的挑战结果</h2>
+
+				<p>好的，我们人类已经在这道题上超时。因为随着时间的推移，我们只会变得越来越举棋不定、没有耐心、觉得无聊。那么 AI 在这道题上的表现究竟如何呢？之前，在 test.ai 的总部，我们的一些非技术人员简单地查看了大量的登录页面并且给每个页面都进行了信任度打分 （1 ~ 10）。然后我们使用这些数据训练了一个简单的神经网络。所以 AI 到底是如何解题的？我们分析了神经网络的所有权重，发现 AI 对这个问题的回答是这样的。</p>
+
+				<ul><li>外国字符 — 如果登录页面中包含外国的字符或单词，则可信任度较低。</li><li>品牌识别 — 如果登录页面具有著名的 / 可识别的品牌形象，则更值得信赖。</li><li>元素数量 — 如果页面中包含更多元素，则可信任度就会降低。页面上的元素越少，则越值得信赖。</li></ul>
+
+				<p>机器击败了人类！ AI 不仅发现了与可信度相关的新度量维度（元素数量），而且 AI 还给出了登录页面的可信度（不可信）精确评分，范围为 1 到 10。</p>
+
+				<p>有趣的是，受过训练的 AI 比任何一个参与了数据标注的人都要聪明。神经网络有效地学习了所有进行标注数据的人的智慧。举个例子，如果有人精通中文或者对中国软件比较熟悉，那么他们不会将这当作是导致页面不可信的因素， AI 比任何一个人都要聪明。</p>
+
+				<p>并且， AI 比人类更加可靠。回想一下，我们刚才问了 70 位顶尖测试工程师这个问题。以这作为样本来看，一家公司仅仅只有 2 / 70 （2.8%）的概率有能力识别出这些问题。况且没有一个人成功地找出一个以上的可信度度量维度， 而 AI 找出了 3个。</p>
+
+				<p>更加重要的是， AI 反应了 “真实” 用户是如何看待可信度的。测试人员仅仅只能模拟用户的角度去进行测试，但他们始终不是真实的用户。真实的用户去进行定性质量评估将会比一个测试人员充当逆向工程师去猜测要好得多。</p>
+
+				<p>AI 的价格也要便宜得多，可用于所有的技术团队，并且 AI 比人类更快。经过训练的AI大约仅需 200毫秒 去衡量可信度。</p>
+				<br/>
+				<h2>AI 也可以教我们</h2>
+
+				<p>这一天，人工智能在定性质量评估最棘手的问题中击败了70个测试工程师（甚至可能击败了你）。因为人们普遍认为 AI 很难复制他们工作中的某些特殊技能，所以大家通常会忽略 AI 的进步。但现实是，在许多专业领域（包括软件开发和测试）中，人工智能通常可以比人类做得更好。如果测试工程师无法面对 AI 在某些测试方面可能比他们做的更好这一令人不安的事实，那么他们将很快会转行。</p>
+
+				<p>人工智能在软件测试（最困难的任务）中击败人类，是非常令人感到兴奋的。但经过了一段时间的思考过后，这也是 AI 第一次教会我（和你！）关于测试和质量方面的知识。我们现在都知道，如果登录页面上有更多元素，复选框，文本，图标等，则用户可能会对该页面不那么信任。但其实几分钟前你还不知道这一事实。如果我们不仔细查看 AI 的大脑究竟是如何运作的，我不确定今天是否有人会知道这一事实。人类现在正在向 AI 学习，从长远来看，这可能比 AI 在软件测试中击败我们更为重要。</p>
+				<br/>
+			</div>
+
 		</div>
-		<div class="banner-bottom1-right">
-			<div class="banner-bottom1-right1">
-				<h3>CATEGORIES</h3>
-				<ul>
-					<li><a href="#">Pellentesque in ipsum</a></li>
-					<li><a href="#">Vivamus magna justo</a></li>
-					<li><a href="#">Cras ultricies ligula</a></li>
-					<li><a href="#">Orci porta dapibus</a></li>
-					<li><a href="#">est oben dis</a></li>
-					<li><a href="#">Curabitur aliquet quam uis lorem</a></li>
-					<li><a href="#">Nulla quis lorem ut libero</a></li>
-				</ul>
-			</div>
-			<div class="banner-bottom1-right1">
-				<h3>ARCHIEVE</h3>
-				<ul>
-					<li><a href="#">December 2014</a></li>
-					<li><a href="#">March 2015</a></li>
-					<li><a href="#">April 2015</a></li>
-					<li><a href="#">June 2015</a></li>
-				</ul>
-			</div>
+		<!--<div class="banner-bottom1-right">-->
+			<!--<div class="banner-bottom1-right1">-->
+				<!--<h3>文章目录</h3>-->
+				<!--<ul>-->
+					<!--<li><a href="#">Pellentesque in ipsum</a></li>-->
+					<!--<li><a href="#">Vivamus magna justo</a></li>-->
+					<!--<li><a href="#">Cras ultricies ligula</a></li>-->
+					<!--<li><a href="#">Orci porta dapibus</a></li>-->
+					<!--<li><a href="#">est oben dis</a></li>-->
+					<!--<li><a href="#">Curabitur aliquet quam uis lorem</a></li>-->
+					<!--<li><a href="#">Nulla quis lorem ut libero</a></li>-->
+				<!--</ul>-->
+			<!--</div>-->
+			<!--<div class="banner-bottom1-right1">-->
+				<!--<h3>ARCHIEVE</h3>-->
+				<!--<ul>-->
+					<!--<li><a href="#">December 2014</a></li>-->
+					<!--<li><a href="#">March 2015</a></li>-->
+					<!--<li><a href="#">April 2015</a></li>-->
+					<!--<li><a href="#">June 2015</a></li>-->
+				<!--</ul>-->
+			<!--</div>-->
+		<!--</div>-->
+	<!--</div>-->
+<!-- //banner-bottom -->
+
+<!-- //banner -->
+
+<!--&lt;!&ndash; banner-bottom &ndash;&gt;-->
+	<!--<div class="banner-bottom">-->
+	<!--<div class="container">-->
+		<!--<div class="banner-bottom-left">-->
+			<!--<div class="fig">-->
+				<!---->
+			<!--</div>-->
+			<!--<h3>Web Design</h3>-->
+			<!--<p>Lorem ipsum dolor sit amet<span> est oben dis</span></p>-->
+		<!--</div>-->
+		<!--<div class="banner-bottom-left banner-bottom-mid">-->
+			<!--<div class="fig1">-->
+				<!---->
+			<!--</div>-->
+			<!--<h3>Graphic Design</h3>-->
+			<!--<p>Lorem ipsum dolor sit amet<span> est oben dis</span></p>-->
+		<!--</div>-->
+		<!--<div class="banner-bottom-left">-->
+			<!--<div class="fig2">-->
+				<!---->
+			<!--</div>-->
+			<!--<h3>Photography</h3>-->
+			<!--<p>Lorem ipsum dolor sit amet<span> est oben dis</span></p>-->
+		<!--</div>-->
+		<!--<div class="clearfix"> </div>-->
+		<!--<div class="banner-bottom-text">-->
+			<!--<p>"I Want to make beautiful things,even if nobody cares,-->
+				<!--<span>as opposed to ugly things.That's my intent."</span></p>-->
+		<!--</div>-->
+		<!--<div class="banner-bottom-grids">-->
+			<!--<div class="banner-bottom-grid">-->
+				<!--<img src="images/8.jpg" alt=" " />-->
+				<!--<h3>Cool image</h3>-->
+				<!--<p>Galaxy Corp.</p>-->
+			<!--</div>-->
+			<!--<div class="banner-bottom-grid grid-mid">-->
+				<!--<img src="images/3.jpg" alt=" " />-->
+				<!--<h3>Great Picture</h3>-->
+				<!--<p>Galaxy Corp.</p>-->
+			<!--</div>-->
+			<!--<div class="banner-bottom-grid">-->
+				<!--<img src="images/2.jpg" alt=" " />-->
+				<!--<h3>Cool image</h3>-->
+				<!--<p>Galaxy Corp.</p>-->
+			<!--</div>-->
+			<!--<div class="clearfix"> </div>-->
+		<!--</div>-->
+	<!--</div>-->
+	<!--</div>-->
+<!--&lt;!&ndash; //banner-bottom &ndash;&gt;-->
+<!-- about -->
+	<div id="about" class="team">
+	<div class="container">
+		<h4>关于泰斯特</h4>
+		<div class="group">
+			<img src="images/aboutMe.png" alt=" " />
+		</div>
+		<div class="group-text">
+			<h3> 泰斯特 </h3>
+			<p> 泰斯特这个名字的谐音为 "tester", 翻译成中文是测试者的意思，这是这个名字的
+				由来。泰斯特，开源接口测试平台 & 码云最有价值开源项目 -
+				<a target="blank" href="https://gitee.com/amazingTest/Taisite-Platform">「泰斯特平台」</a>作者, 精通自动化测试
+				技术。泰斯特经历了从零搭建自动测试体系的所有困难, 如今带着极高的技术以及诚
+				意帮助每一位想入行测试行业的同学完成他们的梦想。相关数据表明, 近几年测试行业
+				的门槛越来越高, 开发能力薄弱的测试人
+				员逐渐被行业所淘汰。为帮助大家跟上测试行业发展的节奏, 泰斯特结合了所有测试前辈
+				沉淀的精华以及自身对自动化测试的感悟打造了
+				<a onclick="playVideo()" href="#testDev" class="scroll">「人人都是测试开发」</a>这门课程，内
+				容涵盖了前后双端以及数据库相关的知识，
+				快速帮助大家完成测试开发的梦想，就如同课名一般，泰斯特的愿景是人人都是测试开发。
+				希望这门课程能够帮助大家在测试领域中更上一层楼，人人都能开发出心目中的 "泰斯特平台"。
+			</p>
 		</div>
 		<div class="clearfix"> </div>
-		<div class="tags">
-				<div class="tags-left">
-					<ul>
-						<li><a href="#"><small class="para"> </small><span>January 3,2015</span></a></li>
-						<li><a href="#"><small class="para1"> </small><span>admin</span></a></li>
-						<li><a href="#"><small class="para2"> </small><span>No Comments</span></a></li>
-						<li><a href="#"><small class="para3"> </small><span>View posts</span></a></li>
-					</ul>
-				</div>
-				<div class="tags-right">
-					<ul>
-						<li><a href="#"><small class="para4"> </small><span>Permalink</span></a></li>
-					</ul>
-				</div>
-				<div class="clearfix"> </div>
-		</div>
-		<div class="responses">
-			<h3>RESPONSES</h3>
-			<div class="response">
-				<div class="f1">
-					<span> </span>
-				</div>
-				<div class="response-text">
-					<ul>
-						<li>Admin</li>
-						<li>3 January 2015 at 11am</li>
-					</ul>
-					<p>It is a long established fact that a reader will be distracted by
-					the readable content of a page when looking at its layout.
-					The point of using Lorem Ipsum is that it has a more-or-less</p>
-					<a href="#">Reply</a>
-				</div>
-				<div class="clearfix"> </div>
-			</div>
-			<div class="response">
-				<div class="f1">
-					<span> </span>
-				</div>
-				<div class="response-text">
-					<ul>
-						<li>Admin</li>
-						<li>3 January 2015 at 11am</li>
-					</ul>
-					<p>It is a long established fact that a reader will be distracted by
-					the readable content of a page when looking at its layout.
-					The point of using Lorem Ipsum is that it has a more-or-less</p>
-					<a href="#">Reply</a>
-				</div>
-				<div class="clearfix"> </div>
-			</div>
-		</div>
-		<div class="comments">
-			<h3>leave a comment</h3> 
-			<form>
-				<input type="text" placeholder="Name" required>
-				<input type="text" placeholder="Email" required>
-				<input type="text" placeholder="Phone Number" required>
-				<textarea placeholder="Message" required></textarea>
-				<input type="submit" value="send">
-			</form>
-		</div>
 	</div>
 	</div>
-<!-- //banner-bottom -->
+	<div id="team" class="about">
+	<!--<div class="container">-->
+		<!--<div class="about-us">-->
+			<!--<h2>Team</h2>-->
+			<!--<p>Donec sollicitudin molestie malesuada. Nulla quis lorem ut libero mal suada-->
+				<!--<span>feugiat. Curabitur aliquet quamuis lorem</span></p>-->
+		<!--</div>-->
+		<!--<div class="about-grids">-->
+			<!--<div class="about-grid">-->
+				<!--<img src="images/12.jpg" alt=" " />-->
+				<!--<div class="about-grid-john">-->
+					<!--<div class="john">-->
+						<!--<h4>Mr.John Doe</h4>-->
+						<!--<p>Creative Director</p>-->
+					<!--</div>-->
+					<!--<div class="social-icons">-->
+						<!--<ul>-->
+							<!--<li><a href class="facebook"> </a></li>-->
+							<!--<li><a href class="twitter"> </a></li>-->
+						<!--</ul>-->
+					<!--</div>-->
+					<!--<div class="clearfix"> </div>-->
+					<!--<p class="para">Donec sollicitudin molestie male-->
+							<!--suada. Curabitur aliquet quam id dui-->
+							<!--posuere blandit. Donec sollicitudin-->
+							<!--molestie malesuada.</p>-->
+					<!--<div class="hello">-->
+						<!--<a href="#">Say Hello</a>-->
+					<!--</div>-->
+				<!--</div>-->
+			<!--</div>-->
+			<!--<div class="about-grid about-mid">-->
+				<!--<img src="images/13.jpg" alt=" " />-->
+				<!--<div class="about-grid-john">-->
+					<!--<div class="john">-->
+						<!--<h4>Mr.John Doe</h4>-->
+						<!--<p>Creative Director</p>-->
+					<!--</div>-->
+					<!--<div class="social-icons">-->
+						<!--<ul>-->
+							<!--<li><a href class="facebook"> </a></li>-->
+							<!--<li><a href class="twitter"> </a></li>-->
+						<!--</ul>-->
+					<!--</div>-->
+					<!--<div class="clearfix"> </div>-->
+					<!--<p class="para">Donec sollicitudin molestie male-->
+							<!--suada. Curabitur aliquet quam id dui-->
+							<!--posuere blandit. Donec sollicitudin-->
+							<!--molestie malesuada.</p>-->
+					<!--<div class="hello">-->
+						<!--<a href="#">Say Hello</a>-->
+					<!--</div>-->
+				<!--</div>-->
+			<!--</div>-->
+			<!--<div class="about-grid">-->
+				<!--<img src="images/11.jpg" alt=" " />-->
+				<!--<div class="about-grid-john">-->
+					<!--<div class="john">-->
+						<!--<h4>Mr.John Doe</h4>-->
+						<!--<p>Creative Director</p>-->
+					<!--</div>-->
+					<!--<div class="social-icons">-->
+						<!--<ul>-->
+							<!--<li><a href class="facebook"> </a></li>-->
+							<!--<li><a href class="twitter"> </a></li>-->
+						<!--</ul>-->
+					<!--</div>-->
+					<!--<div class="clearfix"> </div>-->
+					<!--<p class="para">Donec sollicitudin molestie male-->
+							<!--suada. Curabitur aliquet quam id dui-->
+							<!--posuere blandit. Donec sollicitudin-->
+							<!--molestie malesuada.</p>-->
+					<!--<div class="hello">-->
+						<!--<a href="#">Say Hello</a>-->
+					<!--</div>-->
+				<!--</div>-->
+			<!--</div>-->
+			<!--<div class="clearfix"> </div>-->
+		<!--</div>-->
+	<!--</div>-->
+	</div>
+<!-- //about -->
+<!--&lt;!&ndash; pricing &ndash;&gt;-->
+	<!--<div id="price" class="pricing">-->
+	<!--<div class="container">-->
+		<!--<div class="price">-->
+			<!--<h2>Pricing</h2>-->
+			<!--<p>Donec sollicitudin molestie malesuada. Nulla quis lorem ut libero mal suada -->
+				<!--<span>feugiat. Curabitur aliquet quam uis lorem</span></p>-->
+		<!--</div>-->
+		<!--<div class="basic">-->
+			<!--<div class="business">-->
+				<!--<h2>Basic</h2>-->
+				<!--<p>Best for small business</p>-->
+			<!--</div>-->
+			<!--<div class="value">-->
+				<!--<p>19,99$</p>-->
+			<!--</div>-->
+			<!--<ul>-->
+				<!--<li><span>50</span> Projects</li>-->
+				<!--<li><span>20</span> Files</li>-->
+				<!--<li><span>Full</span> Support</li>-->
+				<!--<li class="gd"><span>24h</span> Ready</li>-->
+			<!--</ul>-->
+			<!--<div class="buy-me">-->
+				<!--<a href="#">Buy Me</a>-->
+			<!--</div>-->
+		<!--</div>-->
+		<!--<div class="basic basic-mid">-->
+			<!--<div class="business">-->
+				<!--<h2>Premium</h2>-->
+				<!--<p>Best for medium business</p>-->
+			<!--</div>-->
+			<!--<div class="value">-->
+				<!--<p>49,99$</p>-->
+			<!--</div>-->
+			<!--<ul>-->
+				<!--<li><span>50</span> Projects</li>-->
+				<!--<li><span>20</span> Files</li>-->
+				<!--<li><span>Full</span> Support</li>-->
+				<!--<li class="gd"><span>24h</span> Ready</li>-->
+			<!--</ul>-->
+			<!--<div class="buy-me">-->
+				<!--<a href="#">Buy Me</a>-->
+			<!--</div>-->
+		<!--</div>-->
+		<!--<div class="basic">-->
+			<!--<div class="business">-->
+				<!--<h2>Deluxe</h2>-->
+				<!--<p>Best for big business</p>-->
+			<!--</div>-->
+			<!--<div class="value">-->
+				<!--<p>99,99$</p>-->
+			<!--</div>-->
+			<!--<ul>-->
+				<!--<li><span>50</span> Projects</li>-->
+				<!--<li><span>20</span> Files</li>-->
+				<!--<li><span>Full</span> Support</li>-->
+				<!--<li class="gd"><span>24h</span> Ready</li>-->
+			<!--</ul>-->
+			<!--<div class="buy-me">-->
+				<!--<a href="#">Buy Me</a>-->
+			<!--</div>-->
+		<!--</div>-->
+		<!--<div class="clearfix"> </div>-->
+	<!--</div>-->
+	<!--</div>-->
+<!--&lt;!&ndash; //pricing &ndash;&gt;-->
+<div>
+
+	<div id="testDev" class="blog">
+		<div class="container">
+			<h4 style="margin-top: 30px">人人都是测试开发</h4>
+			<video
+					id="videoPlayer"
+					src="introduce.mp4"
+					controls = "true"
+					style="width: 100%;clear:both;display:block;margin:auto">
+			</video>
+		</div>
+	</div>
+
+</div>
+
+<!--&lt;!&ndash; blog &ndash;&gt;-->
+	<!--<div id="blog" class="blog">-->
+	<!--<div class="container">-->
+		<!--<h4 style="	margin-top: 30px">精品文章</h4>-->
+		<!--<div class="blog-grids">-->
+			<!--<div class="blog-grid">-->
+				<!--<a href="blog.html"><img src="images/4.jpg" alt=" " /></a>-->
+				<!--<h4><a href="blog.html">Web Design</a></h4>-->
+				<!--<p>Sed porttitor lactus nibh.Vivamus magna justo.Lacinia eget consecteture sed,convallis att-->
+					<!--tellus.Curabitur aliquet quam id dui posuere blandit.Cras ultricies ligula sed magna...</p>-->
+			<!--</div>-->
+			<!--<div class="blog-grid blog-mid">-->
+				<!--<a href="blog.html"><img src="images/5.jpg" alt=" " /></a>-->
+				<!--<h4><a href="blog.html">Web Design</a></h4>-->
+				<!--<p>Sed porttitor lactus nibh.Vivamus magna justo.Lacinia eget consecteture sed,convallis att-->
+					<!--tellus.Curabitur aliquet quam id dui posuere blandit.Cras ultricies ligula sed magna...</p>-->
+			<!--</div>-->
+			<!--<div class="clearfix"> </div>-->
+		<!--</div>-->
+	<!--</div>-->
+	<!--</div>-->
+<!--&lt;!&ndash; //blog &ndash;&gt;-->
+
 <!-- footer -->
 	<div class="footer">
 	<div class="container">
@@ -179,14 +469,34 @@
 			</div>
 			<div class="clearfix"> </div>
 		</div>
-		<div class="footer-right">
-			<ul>
-				<li><a href="#" class="facebook"> </a></li>
-				<li><a href="#" class="twitter"> </a></li>
-				<li><a href="#" class="dribble"> </a></li>
-			</ul>
-		</div>
+		<!--<div class="footer-right">-->
+			<!--<ul>-->
+				<!--<li><a href="#" class="facebook"> </a></li>-->
+				<!--<li><a href="#" class="twitter"> </a></li>-->
+				<!--<li><a href="#" class="dribble"> </a></li>-->
+			<!--</ul>-->
+		<!--</div>-->
 		<div class="clearfix"> </div>
 	</div>
 	</div>
 <!-- //footer -->
+<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+	$(document).ready(function() {
+		/*
+		var defaults = {
+			containerID: 'toTop', // fading element id
+			containerHoverID: 'toTopHover', // fading element hover id
+			scrollSpeed: 1200,
+			easingType: 'linear'
+		};
+		*/
+
+		$().UItoTop({ easingType: 'easeOutQuart' });
+
+	});
+
+	</script>
+<!-- //here ends scrolling icon -->
+</body>
+</html>
